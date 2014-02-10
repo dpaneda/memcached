@@ -303,7 +303,7 @@ struct settings {
     bool slab_reassign;     /* Whether or not slab reassignment is allowed */
     bool slab_automove;     /* Whether or not to automatically move slabs */
     int hashpower_init;     /* Starting hash power level */
-    bool flush_enabled;     /* flush_all enabled */
+    unsigned min_flush_ttl;     /* Minimum ttl allowed for flush_all */
 };
 
 extern struct stats stats;

@@ -410,7 +410,7 @@ $mc->silent_mutation(::CMD_ADDQ, 'silentadd', 'silentaddval');
     is('NULL', $stats{'domain_socket'});
     is('on', $stats{'evictions'});
     is('yes', $stats{'cas_enabled'});
-    is('yes', $stats{'flush_enabled'});
+    is(0, $stats{'min_flush_ttl'});
 }
 
 # diag "Test quit commands.";
